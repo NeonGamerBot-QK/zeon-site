@@ -105,15 +105,15 @@ function TheZeonsSpin() {
   return (
     <div className="pt-10 min-h-screen bg-base-300">
     <div className='place-items-center md:grid gap-4 grid-cols-3'>
-      <CardDisplay title={"Test"} description={"Yap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yap"} />
+      <CardDisplay title={"Commissions"} description={<p>Zeon handles commissions in my discord by running a ticket system and managing my payments you can see the site <a href="https://saahild.com/commissions">here</a></p>} />
     <div />
-        <CardDisplay title={"Test"} description={"Yap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yap"} />
+        <CardDisplay title={"Github"} description={<p>Zeon runs through a github app and sometimes a github action. Zeon lints my code and organizes and utilizes my functions within github. Zeon is not public and is a private application. </p>} />
       <div />
         <h1  className="md:text-center duration-1000 font-bold md:text-5xl text-2xl text-spin">Zeons Features-></h1>
       <div /> 
-        <CardDisplay title={"Test"} description={"Yap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yap"} />
+        <CardDisplay title={"Chrome ext"} description={<p>Zeon is currently having a chrome extensoion made which will be private for me. Zeon will help me debugging and with my sites utilizing him with plugins and AI.</p>} />
     <div />
-        <CardDisplay title={"Test"} description={"Yap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yapYap yap yap yap"} />
+        <CardDisplay title={"Discord"} description={<p>Zeon helps me through a discord bot and runs automation. Zeon orignally started through this discord bot and then later the  other applications were made.Zeon is also a private bot on discord and is currently not open source.</p>} />
       </div>
       </div>
 )
