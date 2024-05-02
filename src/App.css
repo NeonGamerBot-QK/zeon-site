@@ -1,3 +1,7 @@
+:root {
+  --zeon-bonus-color:crgb(255, 255, 51); ;
+  --zeon-bonus-color-ligter: rgba(255, 255, 51, 0.2);; 
+}
 .App {
   text-align: center;
 }
@@ -8,7 +12,7 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motioni: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 50s linear;
   }
@@ -28,7 +32,14 @@
 .App-link {
   color: #61dafb;
 }
-
+@keyframes spin-text {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,4 +47,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+@keyframes zeon-popout-color {
+  /* yellow, blue, red, orange */
+  0% {
+    background: #FFFF33 ;
+  }
+  25% {
+    background: #3333FF ;
+  }
+  50% {
+    background: #FF3131 ;
+  }
+  100% {
+    background: #FF5F1F ;
+  }body {
+  overflow: hidden; /* Hide scrollbars */
+}
+}
+
+/* for the zeon user script */
+.zeon-icon-popout img {
+  /* animation: App; */
+  animation: App-logo-spin infinite .4s linear !important;
+  /* animation: z; */
+}
+.zeon-icon-popout {
+  animation: zeon-popout-color infinite 10s linear !important;
+  /* background; */
+  opacity: 0.5;
+}
+
+
+.zeon-word {
+  @apply duration-500 transition;
+
+} 
+.zeon-word:hover { 
+background: var(--zeon-bonus-color);
+}
+.text-spin {
+  animation: spin-text  infinite 40s linear !important;
+}
+
+
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
