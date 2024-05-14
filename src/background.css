@@ -20,7 +20,8 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
- @apply bg-base-300;  
+ /* @apply bg-base-300;  */
+ @apply bg-gradient-to-b from-ctp-base to-ctp-crust;
   }
 .background li {
     position: absolute;

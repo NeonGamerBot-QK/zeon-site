@@ -7,11 +7,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Tilt from 'react-parallax-tilt';
 function CommingSoonPage() {
   // leave it here  for incase
-  return <div className="App">
-  <header className="App-header">
-    <img src={logo} className="App-logo" alt="logo"  />
+  return <div className="ctp-latte App-header max-w-lg mx-auto transition-colors space-y-2 min-h-screen hero bg-opacity-40">
+  <header className="  container text-center pt-8 z-50 test-box bg-ctp-mauve rounded-lg ">
+<Tilt>
+<img src={logo} className="mx-auto" alt="logo"  />
+</Tilt>
     <ScrollAnimation animateIn="fadeIn">
-  <b>Comming soon...</b>
+  <b>Comming soon... (under theme rework)</b>
     </ScrollAnimation>
   </header>
 </div>
@@ -40,12 +42,13 @@ function App() {
 }
 function MainLayout() {
   return (    
-    <>
-        <TopHero />
+    <div className={"ctp-mocha"}>
+        {/* <TopHero />
       <AboutZeon />
       <TheZeonsSpin />
-      <Footer />
-    </>
+      <Footer /> */}
+      <CommingSoonPage />
+    </div>
   )
 }
 function TopHero() {

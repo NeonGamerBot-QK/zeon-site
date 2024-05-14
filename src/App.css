@@ -19,14 +19,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  /* @apply mocha; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(8px + 3vmin);
+  /* color: white; */
 }
 
 .App-link {
@@ -78,7 +79,9 @@
   opacity: 0.5;
 }
 
-
+.test-box {
+  @apply from-ctp-mauve to-ctp-crust outline-ctp-pink;
+}
 .zeon-word {
   @apply duration-500 transition;
 
