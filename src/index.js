@@ -9,7 +9,7 @@ import Footer from './Footer.js'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <div>
-      <Footer />
+    <Footer />
     <Background />
     <App />
   </div>
