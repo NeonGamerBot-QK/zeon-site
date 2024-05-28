@@ -21,7 +21,7 @@
     padding: 0;
     overflow: hidden;
  /* @apply bg-base-300;  */
- @apply bg-gradient-to-b from-ctp-base to-ctp-crust;
+ @apply bg-gradient-to-b from-ctp-mantle to-ctp-crust;
   }
 .background li {
     position: absolute;
@@ -29,7 +29,8 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: rgba(203, 166, 247, 0.15);
     animation: animate 24s linear infinite;
 }
 

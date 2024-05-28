@@ -5,9 +5,11 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 import 'animate.css/animate.compat.css'
 import Background from './background.js'
+import Footer from './Footer.js'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <div>
+      <Footer />
     <Background />
     <App />
   </div>

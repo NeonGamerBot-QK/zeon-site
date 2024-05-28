@@ -87,7 +87,10 @@
 
 } 
 .zeon-word:hover { 
-background: var(--zeon-bonus-color);
+/* background: var(--zeon-bonus-color); */
+/* @apply text-yellow-500; */
+color: #f9e2af;
+/* @apply from-ctp-pink to-ctp-mauve; */
 }
 .text-spin {
   animation: spin-text  infinite 40s linear !important;
@@ -105,4 +108,5 @@ body {
 html, body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  color: #cdd6f4;
 }
